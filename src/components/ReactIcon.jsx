@@ -3,11 +3,11 @@
 import React from 'react'
 import { Float, useGLTF } from '@react-three/drei'
 
-const ReactIcon = (props) => {
+const ReactIcon = ({position, isMobile}) => {
   const { nodes, materials } = useGLTF('/models/react-icon.glb')
   return (
     <Float floatIntensity={1}>
-      <group position={[8, 8, 0]} scale={0.5} {...props}>
+      <group position={position} scale={isMobile ? 0.3 : 0.5 } >
         <mesh
           geometry={nodes['React-Logo_Material002_0'].geometry}
           material={materials['Material.002']}

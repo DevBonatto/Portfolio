@@ -3,7 +3,7 @@ import React, { useRef } from 'react'
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
 
-const JavaIcon = (props) => {
+const JavaIcon = ({ position, isMobile }) => {
   const javaIconRef = useRef()
   const { scene } = useGLTF('/models/java-icon.glb')
 
@@ -17,7 +17,7 @@ const JavaIcon = (props) => {
   })
 
   return (
-    <mesh {...props} ref={javaIconRef} rotation={[0, Math.PI / 1, 0]} scale={1}>
+    <mesh position={position} ref={javaIconRef} rotation={[0, Math.PI / 1, 0]} scale={isMobile ? 0.7 : 1}>
       <primitive object={scene} />
     </mesh>
   )

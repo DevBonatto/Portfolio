@@ -2,10 +2,10 @@ export const calculateSizes = (isSmall, isMobile, isTablet) => {
   return {
     deskScale: isSmall ? 0.05 : isMobile ? 0.06 : 0.065,
     deskPosition: isMobile ? [0.5, -4.5, 0] : [0.25, -5.5, 0],
-    nodeIconPosition: isSmall ? [2, -7, 0] : isMobile ? [5, -5, 0] : isTablet ? [5, -5, 0] : [9, -5.5, 0],
+    nodeIconPosition: isSmall ? [2, -6.5, 0] : isMobile ? [5, -5, 0] : isTablet ? [5, -5, 0] : [9, -5.5, 0],
     reactIconPosition: isSmall ? [2, 4, 0] : isMobile ? [5, 4, 0] : isTablet ? [5, 4, 0] : [8, 3, 0],
     mySQLIconPosition: isSmall ? [-2, 3, 0] : isMobile ? [-7, 5, 0] : isTablet ? [-7, 5, 0] : [-10, 5, 0],
-    javaIconPosition: isSmall ? [-3, -12, -10] : isMobile ? [-9, -10, -10] : isTablet ? [-11, -7, -10] : [-13, -12.5, -10],
+    javaIconPosition: isSmall ? [-3, -10.5, -10] : isMobile ? [-9, -10, -10] : isTablet ? [-11, -7, -10] : [-13, -12.5, -10],
   }
 }
 

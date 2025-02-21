@@ -2,7 +2,7 @@ import React, { useRef } from 'react'
 import { Float, useGLTF } from '@react-three/drei'
 import { useFrame } from '@react-three/fiber'
 
-const NodeIcon = ({ ...props }) => {
+const NodeIcon = ({ position, isMobile }) => {
   const { nodes, materials } = useGLTF('/models/nodejs-icon.glb')
   const groupRef = useRef()
 
@@ -16,11 +16,9 @@ const NodeIcon = ({ ...props }) => {
     <Float>
       <group
         ref={groupRef}
-        position={[9, -4, 0]} 
-        rotation={[0, 0, 0]}
-        scale={1}
+        scale={isMobile ? 0.7 : 1}
         dispose={null}
-        {...props}
+        position={position}
       >
         <mesh
           geometry={nodes.Cube011.geometry}

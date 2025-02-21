@@ -11,6 +11,7 @@ import ReactIcon from '../components/ReactIcon.jsx'
 import NodeIcon from '../components/NodeIcon.jsx'
 import MySQLIcon from '../components/MySQLIcon.jsx'
 import HeroCamera from '../components/HeroCamera.jsx'
+import Button from '../components/Button.jsx'
  
 const Hero = () => {
   // const controls = useControls('HackerRoom', {
@@ -82,10 +83,10 @@ const Hero = () => {
             </HeroCamera>
 
               <group>
-                <JavaIcon position={sizes.javaIconPosition}/>
-                <ReactIcon position={sizes.reactIconPosition}/>
-                <NodeIcon position={sizes.nodeIconPosition}/>
-                <MySQLIcon position={sizes.mySQLIconPosition}/>
+                <JavaIcon position={sizes.javaIconPosition} isMobile={isMobile}/>
+                <ReactIcon position={sizes.reactIconPosition} isMobile={isMobile}/>
+                <NodeIcon position={sizes.nodeIconPosition} isMobile={isMobile}/>
+                <MySQLIcon position={sizes.mySQLIconPosition} isMobile={isMobile}/>
               </group>
             <ambientLight intensity={1} />
             <directionalLight position={[10, 10, 10]} intensity={0.5} />
@@ -93,6 +94,11 @@ const Hero = () => {
         </Canvas>
       </div>
 
+      <div className="absolute bottom-7 left-0 right-0 w-full z-10 c-space">
+        <a href="#contact" className='w-fit'>
+          <Button name="Let's work together" isBeam containerClass='sm:w-fit w-full sm:min-w-96' />
+        </a>
+      </div>
     </section>
   )
 }
