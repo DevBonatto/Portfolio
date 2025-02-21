@@ -10,6 +10,7 @@ import JavaIcon from '../components/JavaIcon.jsx'
 import ReactIcon from '../components/ReactIcon.jsx'
 import NodeIcon from '../components/NodeIcon.jsx'
 import MySQLIcon from '../components/MySQLIcon.jsx'
+import HeroCamera from '../components/HeroCamera.jsx'
  
 const Hero = () => {
   // const controls = useControls('HackerRoom', {
@@ -69,6 +70,7 @@ const Hero = () => {
           <Suspense fallback={<CanvasLoader />}>
             <PerspectiveCamera makeDefault position={[0, 0, 20]} />
 
+          <HeroCamera isMobile={isMobile}>
             <HackerRoom 
               // scale={0.07} 
               //position={[0, 0, 0]} 
@@ -77,6 +79,7 @@ const Hero = () => {
               rotation={[0, -Math.PI, 0]}
               scale={sizes.deskScale}
               />
+            </HeroCamera>
 
               <group>
                 <JavaIcon position={sizes.javaIconPosition}/>

@@ -18,7 +18,7 @@ const NodeIcon = ({ ...props }) => {
         ref={groupRef}
         position={[9, -4, 0]} 
         rotation={[0, 0, 0]}
-        scale={0.74}
+        scale={1}
         dispose={null}
         {...props}
       >

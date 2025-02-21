@@ -7,7 +7,7 @@ const ReactIcon = (props) => {
   const { nodes, materials } = useGLTF('/models/react-icon.glb')
   return (
     <Float floatIntensity={1}>
-      <group position={[8, 8, 0]} scale={0.3} {...props}>
+      <group position={[8, 8, 0]} scale={0.5} {...props}>
         <mesh
           geometry={nodes['React-Logo_Material002_0'].geometry}
           material={materials['Material.002']}

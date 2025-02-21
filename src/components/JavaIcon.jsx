@@ -17,7 +17,7 @@ const JavaIcon = (props) => {
   })
 
   return (
-    <mesh {...props} ref={javaIconRef} rotation={[0, Math.PI / 5, 0]}>
+    <mesh {...props} ref={javaIconRef} rotation={[0, Math.PI / 1, 0]} scale={1}>
       <primitive object={scene} />
     </mesh>
   )
