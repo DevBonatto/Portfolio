@@ -6,6 +6,10 @@ import CanvasLoader from '../components/CanvasLoader'
 import { Leva, useControls } from 'leva'
 import { useMediaQuery } from 'react-responsive'
 import { calculateSizes } from "../constants/index.js"
+import JavaIcon from '../components/JavaIcon.jsx'
+import ReactIcon from '../components/ReactIcon.jsx'
+import NodeIcon from '../components/NodeIcon.jsx'
+import MySQLIcon from '../components/MySQLIcon.jsx'
  
 const Hero = () => {
   // const controls = useControls('HackerRoom', {
@@ -73,6 +77,13 @@ const Hero = () => {
               rotation={[0, -Math.PI, 0]}
               scale={sizes.deskScale}
               />
+
+              <group>
+                <JavaIcon position={sizes.javaIconPosition}/>
+                <ReactIcon position={sizes.reactIconPosition}/>
+                <NodeIcon position={sizes.nodeIconPosition}/>
+                <MySQLIcon position={sizes.mySQLIconPosition}/>
+              </group>
             <ambientLight intensity={1} />
             <directionalLight position={[10, 10, 10]} intensity={0.5} />
           </Suspense>
