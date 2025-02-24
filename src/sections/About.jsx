@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Globe from 'react-globe.gl'
 import Button from '../components/Button'
+import { useMediaQuery } from 'react-responsive'
 
 const About = () => {
   const [hasCopied, setHasCopied] = useState(false)
@@ -14,6 +15,8 @@ const About = () => {
       setHasCopied(false)
     }, 2000)
   }
+
+  const isSmall = useMediaQuery({ maxWidth: 440 })
 
   return (
     <section className='c-space my-20'>
@@ -40,8 +43,8 @@ const About = () => {
           <div className='grid-container'>
             <div className='rounded-3xl w-full sm:h-[326px] h-fit flex justify-center items-center'>
               <Globe
-                height={326}
-                width={326}
+                height={isSmall ? 250 : 326}
+                width={isSmall ? 250 : 326}
                 backgroundColor='rgba(0,0,0,0)'
                 backgroundImageOpacity={0.5}
                 showAtmosphere
@@ -62,6 +65,8 @@ const About = () => {
               </p>
               <p className='grid-subtext'>
                 I'm based in Brazil, São Paulo.
+                <br/>
+                English (Fluent) | Italian (Basic+)
               </p>
               <Button name="Contact me" isBeam containerClass='w-full mt-10' />
             </div>
