@@ -23,7 +23,7 @@ const About = () => {
       <div className='grid xl:grid-cols-3 xl:grid-rows-6 md:grid-cols-2 grid-cols1 gap-5 h-full'>
         <div className='col-span-1 xl:row-span-3'>
           <div className='grid-container items-center'>
-            <img src="/assets/grid1.png" alt="grid-1" className='w-[200px] sm:w-[276px] sm:h-[276px] aspect-square object-cover rounded-full' />
+            <img src="/assets/grid1.jpg" alt="grid-1" className='w-[200px] sm:w-[276px] sm:h-[276px] aspect-square object-cover rounded-full' />
             <div>
               <p className='grid-headtext'>About me</p>
               <p className='grid-subtext'>With 3+ years of experience, i have honed my skills in Frontend and Backend development.</p>
