@@ -1,4 +1,5 @@
 import React, { useRef, useState } from 'react'
+import emailjs from '@emailjs/browser'
 
 const Contact = () => {
   const formRef = useRef()
@@ -15,8 +16,30 @@ const Contact = () => {
     setForm({ ...form, [name]: value})
   }
 
-  const handleSubmit = () => {
-    
+  const handleSubmit = async (event) => {
+     event.preventDefault()
+     setLoading(true)
+
+     try {
+      await emailjs.send(
+        'service_8ufwmol', 
+        'template_b6bcxxu',
+        {
+          from_name: form.name,
+          to_name: 'Lucca',
+          from_email: form.email,
+          to_email: 'devbonatto@gmail.com',
+          message: form.message
+        },
+          'rVjRZeQ1m_2oI5d0j'
+      )
+      setLoading(false)
+      alert('Your message has been sent!')
+
+     } catch (error) {
+        setLoading(false)
+        console.log('Error on submit email: ', error)
+     }
   }
 
   return (
