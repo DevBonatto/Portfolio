@@ -1,10 +1,12 @@
 import React, { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser'
+import { Modal } from 'antd'
 
 const Contact = () => {
   const formRef = useRef()
 
   const [loading, setLoading] = useState(false)
+  const [isModalVisible, setIsModalVisible] = useState(false)
 
   const [form, setForm] = useState({
     name: '',
@@ -13,14 +15,14 @@ const Contact = () => {
   })
 
   const handleChange = ({ target: { name, value } }) => {
-    setForm({ ...form, [name]: value})
+    setForm({ ...form, [name]: value })
   }
 
   const handleSubmit = async (event) => {
-     event.preventDefault()
-     setLoading(true)
+    event.preventDefault()
+    setLoading(true)
 
-     try {
+    try {
       await emailjs.send(
         'service_8ufwmol', 
         'template_b6bcxxu',
@@ -31,32 +33,42 @@ const Contact = () => {
           to_email: 'devbonatto@gmail.com',
           message: form.message
         },
-          'rVjRZeQ1m_2oI5d0j'
+        'rVjRZeQ1m_2oI5d0j'
       )
+
       setLoading(false)
-      alert('Your message has been sent!')
-      
+      setIsModalVisible(true)
+
       setForm({
         name: '',
         email: '',
         message: ''
       })
-     } catch (error) {
-        setLoading(false)
-        console.log('Error on submit email: ', error)
-     }
+    } catch (error) {
+      setLoading(false)
+      console.log('Error on submit email: ', error)
+    }
   }
 
   return (
-    <section className='c-space my-20'>
+    <section className='c-space my-20' id='contact'>
+       <Modal
+        title="Success!"
+        open={isModalVisible}
+        onOk={() => setIsModalVisible(false)}
+        onCancel={() => setIsModalVisible(false)}
+      >
+        <p>Your message has been sent!</p>
+      </Modal>
+      
       <div className='relative min-h-screen flex items-center justify-center flex-col'>
-      <img src="/assets/terminal.png" alt="terminal-background" className='absolute inset-0 min-h-screen' />
+        <img src="/assets/terminal.png" alt="terminal-background" className='absolute inset-0 min-h-screen' />
         <div className='contact-container'>
           <h3 className='head-text'>Let's talk</h3>
           <p className='text-lg text-white-600 mt-3'>
-            Wheter you're looking to build a new website, improve your existing platform, or bring a unique project to life, I'm here to help.
+            Whether you're looking to build a new website, improve your existing platform, or bring a unique project to life, I'm here to help.
           </p>
-          
+
           <form ref={formRef} onSubmit={handleSubmit} className='mt-12 flex flex-col space-y-7'>
             <label className='space-y-3'>
               <span className='field-label'>Full Name</span>
@@ -97,7 +109,6 @@ const Contact = () => {
 
             <button className='field-btn' type='submit' disabled={loading}>
               {loading ? 'Sending...' : 'Send Message'}
-              
               <img src="/assets/arrow-up.png" alt="arrow-up" className='field-btn_arrow' />
             </button>
           </form>

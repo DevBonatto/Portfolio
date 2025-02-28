@@ -4,16 +4,24 @@ import Hero from './sections/Hero'
 import About from './sections/About'
 import Projects from './sections/Projects'
 import Contact from './sections/Contact'
+import 'antd/dist/reset.css'
+import { ConfigProvider, theme } from 'antd'
 
 const App = () => {
   return (
-    <main className='max-w-7xl mx-auto'>
-      <Navbar />
-      <Hero />
-      <About />
-      <Projects />
-      <Contact />
-    </main>
+    <ConfigProvider
+      theme={{
+        algorithm: theme.darkAlgorithm
+      }}
+    >
+      <main className='max-w-7xl mx-auto'>
+        <Navbar />
+        <Hero />
+        <About />
+        <Projects />
+        <Contact />
+      </main>
+    </ConfigProvider>
   )
 }
 
