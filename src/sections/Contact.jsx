@@ -61,7 +61,7 @@ const Contact = () => {
         <p>Your message has been sent!</p>
       </Modal>
       
-      <div className='relative min-h-screen flex items-center justify-center flex-col'>
+      <div className='relative min-h-screen flex items-center justify-center flex-col py-4'>
         <img src="/assets/terminal.png" alt="terminal-background" className='absolute inset-0 min-h-screen' />
         <div className='contact-container'>
           <h3 className='head-text'>Let's talk</h3>
@@ -101,7 +101,7 @@ const Contact = () => {
                 value={form.message}
                 onChange={handleChange}
                 required
-                rows={5}
+                rows={2}
                 className='field-input'
                 placeholder="Hi, I'm interested in..."
               />
