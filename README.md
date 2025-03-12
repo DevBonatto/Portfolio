@@ -7,8 +7,14 @@ This project is just my portfolio! 🚀
 - Deploying on Vercel
 
 ## 🚀 Technologies/Tools
+- Node.js
 - React.js
 - Three.js
+- React Three Fiber
+- React Three Drei
+- Email JS
+- Vite
+- Tailwind CSS
 
 ## ▶️ Running
 Clone the project:
