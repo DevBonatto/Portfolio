@@ -2,9 +2,11 @@ import React, { useEffect, useRef } from 'react'
 import { useGLTF, useVideoTexture } from '@react-three/drei'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
+import { useThree } from '@react-three/fiber'
 
 const DemoComputer = (props) => {
   const group = useRef()
+  const { camera } = useThree()
   const { nodes, materials } = useGLTF('/models/computer.glb')
 
   const txt = useVideoTexture(props.texture ? props.texture : '/textures/project/project1.mp4')
@@ -16,6 +18,8 @@ const DemoComputer = (props) => {
   }, [txt])
   
   useGSAP(() => {
+    camera.position.set(0, 1, 5) 
+    camera.lookAt(0, 0, 0)
     gsap.from(group.current.rotation, {
       y: Math.PI / 2,
       duration: 1,

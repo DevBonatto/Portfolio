@@ -68,7 +68,9 @@ const About = () => {
                 <br/>
                 English (Fluent) | Italian (Basic+)
               </p>
-              <Button name="Contact me" isBeam containerClass='w-full mt-10' />
+              <a href="#contact">
+                <Button name="Contact me" isBeam containerClass='w-full mt-10' />
+              </a>
             </div>
           </div>
         </div>

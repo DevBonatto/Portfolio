@@ -101,8 +101,8 @@ const Contact = () => {
                 value={form.message}
                 onChange={handleChange}
                 required
-                rows={2}
-                className='field-input'
+                rows={3}
+                className='field-input resize-none'
                 placeholder="Hi, I'm interested in..."
               />
             </label>
