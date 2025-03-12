@@ -7,6 +7,7 @@ import Contact from './sections/Contact'
 import Footer from './sections/Footer'
 import 'antd/dist/reset.css'
 import { ConfigProvider, theme } from 'antd'
+import Experience from './sections/Experience'
 
 const App = () => {
   return (
@@ -20,7 +21,7 @@ const App = () => {
         <Hero />
         <About />
         <Projects />
-
+        <Experience />
         <Contact />
         <Footer />
       </main>
