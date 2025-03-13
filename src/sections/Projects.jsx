@@ -53,7 +53,7 @@ const Projects = () => {
             </div>
 
             <a
-              className="flex items-center gap-2 cursor-pointer text-white-600"
+                className="flex items-baseline gap-2 cursor-pointer text-white"
               href={currentProject.href}
               target="_blank"
               rel="noreferrer">
