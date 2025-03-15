@@ -45,7 +45,7 @@ export const Certifications = [
 export const myProjects = [
   {
     title: 'Rocket Movies',
-    desc: 'Rocket Movies is a platform where you can save your favorite movies. You can add a description, tags, and a rating to each movie you save. The platform also includes a search feature, allowing you to find your favorited movies by name, so you will never forget the movies youve watched and loved!',
+    desc: 'Rocket Movies is a platform where you can save your favorite movies. You can add a description, tags, and a rating to each movie you save. The platform also includes a search feature, allowing you to find your favorited movies by name, so you will never forget the movies you have watched and loved!',
     subdesc:
       'Built as a unique Software-as-a-Service app with React, Node.js & Knex.js.',
     href: 'https://github.com/DevBonatto/RocketMovies',
