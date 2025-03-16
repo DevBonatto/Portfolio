@@ -10,16 +10,12 @@ const Footer = () => {
       </div>
 
       <div className='flex gap-3'>
-        <div className='social-icon'> 
-          <a href="https://github.com/DevBonatto" target='_blank' className='w-1/2 h-1/2'>
-            <img src="/assets/github.svg" alt="github" />
-          </a>
-        </div>
-        <div className='social-icon'>
-          <a href="https://www.linkedin.com/in/luccabonatto/" className='w-1/2 h-1/2' target='_blank'>
-            <img src="/assets/linkedin.png" alt="linkedin"/>
-          </a>
-        </div>
+        <a href="https://github.com/DevBonatto" target='_blank' className='social-icon'>
+          <img className='w-1/2 h-1/2' src="/assets/github.svg" alt="github" />
+        </a>
+        <a href="https://www.linkedin.com/in/luccabonatto/" className='social-icon' target='_blank'>
+          <img className='w-1/2 h-1/2' src="/assets/linkedin.png" alt="linkedin"/>
+        </a>
       </div>
 
       <p className='text-white-500'>© 2025 Lucca. All rights reserved</p>
