@@ -42,6 +42,7 @@ const About = () => {
         <div className='col-span xl:row-span-4'>
           <div className='grid-container'>
             <div className='rounded-3xl w-full sm:h-[326px] h-fit flex justify-center items-center'>
+            {console.log("Renderizando Globe")}
               <Globe
                 height={isSmall ? 250 : 326}
                 width={isSmall ? 250 : 326}
@@ -49,8 +50,8 @@ const About = () => {
                 backgroundImageOpacity={0.5}
                 showAtmosphere
                 showGraticules
-                globeImageUrl="//unpkg.com/three-globe/example/img/earth-night.jpg"
-                bumpImageUrl="//unpkg.com/three-globe/example/img/earth-topology.png"
+                globeImageUrl="https://raw.githubusercontent.com/vasturiano/three-globe/master/example/img/earth-night.jpg"
+                bumpImageUrl="https://raw.githubusercontent.com/vasturiano/three-globe/master/example/img/earth-topology.png"
                 labelsData={[{
                   lat: -23.533773, lng: -46.625290,
                   text: "I'm here",
