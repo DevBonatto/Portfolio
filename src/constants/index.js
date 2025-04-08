@@ -115,7 +115,7 @@ export const workExperiences = [
     name: 'Fiorde Group',
     pos: 'Full Stack Developer',
     duration: 'Nov 2022 - Present',
-    title: 'Second Year - Present: Working in both the Projects Team and the Support and Maintenance Team, handling support tickets (mainly bug fixes and quick improvements) and participating in the development of new features and systems.',
+    title: 'Second Year - Present: Working in both the Projects Team and the Support and Maintenance Team, handling support tickets (mainly bug fixes and quick improvements), participating in the development of new features and systems, and contributing to sprint planning and delivery.',
     icon: '/assets/fiorde.jpeg',
     title2: "First Year: Project Team – worked on project improvements, which were incorporated into sprints. Participated in planning sessions, providing ideas and feedback alongside the project team.",
     animation: 'victory',
