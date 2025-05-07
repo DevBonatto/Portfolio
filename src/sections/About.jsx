@@ -50,8 +50,7 @@ const About = () => {
                 backgroundImageOpacity={0.5}
                 showAtmosphere
                 showGraticules
-                globeImageUrl="https://raw.githubusercontent.com/vasturiano/three-globe/master/example/img/earth-night.jpg"
-                bumpImageUrl="https://raw.githubusercontent.com/vasturiano/three-globe/master/example/img/earth-topology.png"
+                globeImageUrl="../../public/assets/earth_day.jpg"
                 labelsData={[{
                   lat: -23.533773, lng: -46.625290,
                   text: "I'm here",
