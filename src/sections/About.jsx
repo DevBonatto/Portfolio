@@ -50,7 +50,7 @@ const About = () => {
                 backgroundImageOpacity={0.5}
                 showAtmosphere
                 showGraticules
-                globeImageUrl="../../public/assets/earth_day.jpg"
+                globeImageUrl="/assets/earth_day.jpg"
                 labelsData={[{
                   lat: -23.533773, lng: -46.625290,
                   text: "I'm here",
