@@ -44,6 +44,48 @@ export const Certifications = [
 
 export const myProjects = [
   {
+    title: 'CentralyApp',
+    desc: 'CentralyApp is a SaaS that automates billing for small businesses. Merchants register their customers and charges, and the system issues invoices, sends reminders over WhatsApp, collects payments through Pix, boleto and recurring credit card, and applies late fees to overdue invoices.',
+    subdesc:
+      'Designed, built and run by me end to end: Java 17 + Spring Boot 3 API, React frontend, PostgreSQL, Redis, Mercado Pago and Meta WhatsApp Cloud API, deployed with Docker and Nginx on my own VPS, with LGPD compliance and tested backups.',
+    href: 'https://centralyapp.com.br',
+    texture: '/textures/project/project3.mp4',
+    logo: '/assets/centralyapp.svg',
+    logoStyle: {
+      backgroundColor: '#1A1840',
+      border: '0.2px solid #2B2766',
+      boxShadow: '0px 0px 60px 0px #5B53E84D',
+    },
+    spotlight: '/assets/spotlight5.png',
+    tags: [
+      {
+        id: 1,
+        name: 'Java',
+        path: '/assets/java.svg',
+      },
+      {
+        id: 2,
+        name: 'Spring Boot',
+        path: '/assets/spring.svg',
+      },
+      {
+        id: 3,
+        name: 'React.js',
+        path: '/assets/react.svg',
+      },
+      {
+        id: 4,
+        name: 'PostgreSQL',
+        path: '/assets/postgresql.svg',
+      },
+      {
+        id: 5,
+        name: 'Docker',
+        path: '/assets/docker.svg',
+      },
+    ],
+  },
+  {
     title: 'Rocket Movies',
     desc: 'Rocket Movies is a platform where you can save your favorite movies. You can add a description, tags, and a rating to each movie you save. The platform also includes a search feature, allowing you to find your favorited movies by name, so you will never forget the movies you have watched and loved!',
     subdesc:
@@ -112,16 +154,35 @@ export const myProjects = [
 export const workExperiences = [
   {
     id: 1,
-    name: 'Fiorde Group',
-    pos: 'Full Stack Developer',
-    duration: 'Nov 2022 - Present',
-    title: 'Second Year - Present: Working in both the Projects Team and the Support and Maintenance Team, handling support tickets (mainly bug fixes and quick improvements), participating in the development of new features and systems, and contributing to sprint planning and delivery.',
-    icon: '/assets/fiorde.jpeg',
-    title2: "First Year: Project Team – worked on project improvements, which were incorporated into sprints. Participated in planning sessions, providing ideas and feedback alongside the project team.",
+    name: 'CentralyApp',
+    pos: 'Founder & Full Stack Developer',
+    duration: 'Feb 2026 - Present',
+    title: 'Built and run an automated billing SaaS on my own: Java 17 and Spring Boot 3 back end, React front end, PostgreSQL and Redis, Mercado Pago payments (Pix, boleto and recurring card) and invoices delivered over the WhatsApp Cloud API.',
+    title2: 'Also own the infrastructure (Docker, Nginx, SSL, VPS), security audits, LGPD compliance and automated encrypted backups with tested restores.',
+    icon: '/assets/centralyapp.svg',
     animation: 'victory',
   },
   {
     id: 2,
+    name: 'Fiorde Group',
+    pos: 'Programming Assistant',
+    duration: 'Nov 2024 - Present',
+    title: 'Working on both the Projects and the Support teams with Java, Spring Boot, React and MySQL. Helped build the travel service system (service status workflow), built and optimized the bulk upload of business partners and their contacts from Excel spreadsheets, and created the user authorization screen.',
+    title2: 'Day to day, I investigate and fix production bugs, ship quick improvements and take part in sprint planning and delivery.',
+    icon: '/assets/fiorde.jpeg',
+    animation: 'salute',
+  },
+  {
+    id: 3,
+    name: 'Fiorde Group',
+    pos: 'Development Intern',
+    duration: 'Nov 2022 - Nov 2024',
+    title: 'First year on the Projects team, implementing improvements in React and JavaScript planned within sprints. Second year on the Support team, handling bug and quick-improvement tickets in React, Java and MySQL, writing database migrations and documentation.',
+    icon: '/assets/fiorde.jpeg',
+    animation: 'victory',
+  },
+  {
+    id: 4,
     name: 'Oliveira Lawyers',
     pos: 'Internship',
     duration: 'Apr 2022 - Sep 2022',

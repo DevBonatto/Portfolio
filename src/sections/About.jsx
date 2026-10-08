@@ -26,7 +26,7 @@ const About = () => {
             <img src="/assets/grid1.jpg" alt="grid-1" className='w-[200px] sm:w-[276px] sm:h-[276px] aspect-square object-cover rounded-full' />
             <div>
               <p className='grid-headtext'>About me</p>
-              <p className='grid-subtext'>With 3+ years of experience, i have honed my skills in Frontend and Backend development.</p>
+              <p className='grid-subtext'>Full stack developer with 4 years of experience in Java, Spring Boot and React, and a Computer Science degree from FMU (2026). I also founded and built CentralyApp, an automated billing SaaS.</p>
             </div>
           </div>
         </div>
@@ -35,7 +35,7 @@ const About = () => {
             <img src="assets/grid2.png" alt="grid-2" className='w-[200px] sm:w-[276px] h-fit object-contain' />
             <div>
               <p className='grid-headtext'>Tech  Stack</p>
-              <p className='grid-subtext'>I have professional experiences with React, Java, Node.js, MySQL, Docker & Git.</p>
+              <p className='grid-subtext'>I work with Java, Spring Boot, React, PostgreSQL, MySQL, Redis, Docker, Nginx & Git.</p>
             </div>
           </div>
         </div>
@@ -66,7 +66,7 @@ const About = () => {
               <p className='grid-subtext'>
                 I'm based in Brazil, São Paulo.
                 <br/>
-                English (Fluent) | Italian (Basic+)
+                Portuguese (Native) | English (Advanced) | Italian & Spanish (Basic)
               </p>
               <a href="#contact">
                 <Button name="Contact me" isBeam containerClass='w-full mt-10' />
