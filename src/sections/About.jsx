@@ -26,7 +26,7 @@ const About = () => {
             <img src="/assets/grid1.jpg" alt="grid-1" className='w-[200px] sm:w-[276px] sm:h-[276px] aspect-square object-cover rounded-full' />
             <div>
               <p className='grid-headtext'>About me</p>
-              <p className='grid-subtext'>Full stack developer with 4 years of experience in Java, Spring Boot and React, and a Computer Science degree from FMU (2026). I also founded and built CentralyApp, an automated billing SaaS.</p>
+              <p className='grid-subtext'>Full stack developer with 4+ years of experience in Java, Spring Boot and React, and a Computer Science degree from FMU (2026). I also founded and built CentralyApp, an automated billing SaaS.</p>
             </div>
           </div>
         </div>
